@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- HERO -->
+      <header class="hero">
+        <div class="hero-top">
+          <div id="location">Loading...</div>
+          <div id="conditions">Loading...</div>
+        </div>
+
+        <div class="temp-row">
+          <div class="temp-inline" id="temp-toggle">
+            <span id="current-temp">--</span>
+            <span class="temp-unit-inline" id="temp-unit">°F</span>
+          </div>
+        </div>
+
+        <div id="feelslike" class="meta">Loading...</div>
+      </header>
+
+      <!-- MAIN -->
+      <main>
+        <!-- WIND + UV -->
+        <section class="two-col">
+          <section class="card">
+            <p class="section-head">WIND</p>
+            <p class="big" id="wind-mph">--</p>
+            <p class="small" id="wind-direction">--</p>
+          </section>
+
+          <section class="card">
+            <p class="section-head">UV INDEX</p>
+            <p class="big" id="uv-level">--</p>
+            <p class="small" id="uv-desc">--</p>
+          </section>
+        </section>
+
+        <!-- HOURLY -->
+        <section class="card">
+          <p class="section-head">HOURLY FORECAST</p>
+          <div class="hourly" id="hourly-container"></div>
+        </section>
+
+        <!-- DAILY -->
+        <section class="card">
+          <p class="section-head">7-DAY FORECAST</p>
+          <div class="days" id="daily-container"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
